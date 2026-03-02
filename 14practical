@@ -51,13 +51,35 @@ public  class Main{
         for (int r = 0; i < n;i++){
             long start = System.currentTimeMillis();
             total+= (end - start);
+            for(int i = 0;i<n;i++){
+                table.lookup(data[1].key);
+            }
 
         }
+        long end = System.currentTimeMillis();
         return total / 1000.0;
     }
     staic double testChainedhash(){
         int m = 1000003;
-        
+        chainedHash table = new chainedHash(n);
+                for ( int i =0;i <n; i++){
+            table.insert(data[i].key, data[i].value);
+
+        }
+        int repetitions = 30;
+        long total = 0;
+        for (int r = 0; i < n;i++){
+            long start = System.currentTimeMillis();
+            for(int i = 0;i<n;i++){
+                table.lookup(data[1].key);
+            }
+            long end = System.currentTimeMillis();
+            total+= (end - start);
+
+        }
+        return total / 1000.0;
+
+
     }
 
 }
