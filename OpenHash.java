@@ -1,3 +1,6 @@
+//Miguel Wentzel
+//4478677
+//Practical 4
 public class openHash {
 
     private KeyValue[] table;

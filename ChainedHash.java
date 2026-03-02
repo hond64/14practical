@@ -1,3 +1,6 @@
+//Miguel Wentzel
+//4478677
+//Practical 4
 import java.util.LinkedList;
 
 public class chainedHash {
